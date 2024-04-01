@@ -4,8 +4,11 @@ $option2 = $_POST['option2'];
 $description = $_POST['description'];
 
 // Construct folder and file paths
-$folderPath = $_SERVER['USERPROFILE'] . '\\Desktop\\' . $option1;
+$folderPath = 'C:\\' . $option1;
 $filePath = $folderPath . '\\' . $option2 . '.txt';
+
+// $folderPath = $_SERVER['USERPROFILE'] . '\\Desktop\\' . $option1;
+// $filePath = $folderPath . '\\' . $option2 . '.txt';
 
 // Create the folder if it doesn't exist
 if (!file_exists($folderPath)) {
